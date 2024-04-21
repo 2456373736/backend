@@ -18,7 +18,8 @@ router.get('/post', (req, res)=>{
 });
 
 router.get('/explore', async(req, res)=>{
-    const users = await User.find({});
+    const currentUserID = req.user._id;
+    const users = await User.find({ _id: { $ne: currentUserID } });
     return res.render('explore', {users: users});
 });
 router.get('/logout',(req,res)=>{
