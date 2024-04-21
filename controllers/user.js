@@ -71,9 +71,6 @@ async function handleLike(req, res){
     }
 }
 
-
-
-
 module.exports = {
     handleCreateUser,
     handleUserLogin,
