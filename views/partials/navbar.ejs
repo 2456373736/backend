@@ -1,0 +1,24 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/images/sharPie.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      SharPie
+    </a>
+    <div>
+      <button type="button" class="btn btn-outline-primary" onclick="redirectToPostRoute()">POST</button>
+      <button type="button" class="btn btn-outline-primary" onclick="redirectToExploreRoute()">EXPLORE</button>
+      <button type="button" class="btn btn-outline-primary" onclick="redirectToCookieRoute()">LOGOUT</button>
+    </div>
+  </div>
+</nav>
+<script>
+  function redirectToPostRoute(){
+    window.location.href="/user/post";
+  }
+  function redirectToExploreRoute(){
+    window.location.href="/user/explore";
+  }
+  function redirectToCookieRoute(){
+    window.location.href='/user/logout';
+  }
+</script>
